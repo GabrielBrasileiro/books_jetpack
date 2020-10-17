@@ -9,7 +9,6 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
 internal class BooksRepositoryImpl(
-   //
    private val localData: RoomLocalData,
    private val entityMapper: Mapper<BookData, Book>,
    private val dataMapper: Mapper<Book, BookData>
