@@ -9,7 +9,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
 import com.google.firebase.storage.FirebaseStorage
 import dominando.android.data.model.BookData
-import dominando.android.data.source.FbData
+import dominando.android.data.source.FBData
 import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
@@ -21,7 +21,7 @@ import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
 
-internal class FbDataImpl : FbData {
+internal class FBDataImpl : FBData {
 
     private val fbAuth = FirebaseAuth.getInstance()
     private val firestore = FirebaseFirestore.getInstance()

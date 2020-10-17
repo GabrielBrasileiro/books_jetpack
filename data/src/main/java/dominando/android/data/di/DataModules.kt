@@ -13,7 +13,7 @@ object DataModules {
         loadKoinModules(module {
             factory<BooksRepository> {
                 BooksRepositoryImpl(
-                    roomLocalData = get(),
+                    localData = get(),
                     entityMapper = BooksMapper(),
                     dataMapper = BooksDataMapper()
                 )
