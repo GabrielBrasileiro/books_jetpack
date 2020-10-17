@@ -9,7 +9,7 @@ import java.util.UUID
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
-class RoomLocalDataImpl(
+internal class RoomLocalDataImpl(
     db: AppDatabase,
     private val fileHelper: FileHelper
 ) : RoomLocalData {

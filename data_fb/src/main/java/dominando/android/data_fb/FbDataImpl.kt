@@ -21,7 +21,7 @@ import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.callbackFlow
 
-class FbDataImpl : FbData {
+internal class FbDataImpl : FbData {
 
     private val fbAuth = FirebaseAuth.getInstance()
     private val firestore = FirebaseFirestore.getInstance()
