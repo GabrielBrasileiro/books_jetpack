@@ -5,7 +5,8 @@ import dominando.android.domain.entity.MediaType
 import dominando.android.domain.entity.Publisher
 import java.util.UUID
 
-object DataFactory {
+object DomainEntityFactory {
+
     fun dummyBookList() = listOf(
             Book().apply {
                 id = UUID.randomUUID().toString()

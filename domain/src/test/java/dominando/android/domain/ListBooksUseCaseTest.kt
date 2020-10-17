@@ -1,6 +1,6 @@
 package dominando.android.domain
 
-import dominando.android.domain.data.DataFactory
+import dominando.android.domain.data.DomainEntityFactory
 import dominando.android.domain.interactor.ListBooksUseCase
 import dominando.android.domain.repository.BooksRepository
 import io.mockk.coEvery
@@ -15,7 +15,7 @@ import org.junit.Test
 class ListBooksUseCaseTest {
     private val repository: BooksRepository = mockk()
 
-    private val dummyBooksList = DataFactory.dummyBookList()
+    private val dummyBooksList = DomainEntityFactory.dummyBookList()
 
     @Before
     fun init() {
