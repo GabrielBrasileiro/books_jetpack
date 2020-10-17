@@ -1,8 +1,8 @@
 package dominando.android.presentation.data
 
 import dominando.android.data.model.Book
-import dominando.android.data.model.MediaType
-import dominando.android.data.model.Publisher
+import dominando.android.data.model.MediaTypeData
+import dominando.android.data.model.PublisherData
 import java.util.UUID
 
 object DataFactory {
@@ -14,9 +14,9 @@ object DataFactory {
                 available = true
                 coverUrl = ""
                 pages = 954
-                publisher = Publisher(UUID.randomUUID().toString(), "Novatec")
+                publisher = PublisherData(UUID.randomUUID().toString(), "Novatec")
                 year = 2018
-                mediaType = MediaType.PAPER
+                mediaType = MediaTypeData.PAPER
                 rating = 5f
             },
             Book().apply {
@@ -26,9 +26,9 @@ object DataFactory {
                 available = true
                 coverUrl = ""
                 pages = 465
-                publisher = Publisher(UUID.randomUUID().toString(), "Outro")
+                publisher = PublisherData(UUID.randomUUID().toString(), "Outro")
                 year = 2009
-                mediaType = MediaType.EBOOK
+                mediaType = MediaTypeData.EBOOK
                 rating = 5f
             }
     )
@@ -40,9 +40,9 @@ object DataFactory {
         available = true
         coverUrl = ""
         pages = 954
-        publisher = Publisher(UUID.randomUUID().toString(), "Novatec")
+        publisher = PublisherData(UUID.randomUUID().toString(), "Novatec")
         year = 2018
-        mediaType = MediaType.EBOOK
+        mediaType = MediaTypeData.EBOOK
         rating = 5f
     }
 }

@@ -1,8 +1,8 @@
 package dominando.android.presentation.di
 
-import dominando.android.data.BooksRepository
-import dominando.android.data_room.LocalFileHelper
-import dominando.android.data_room.RoomRepository
+import dominando.android.domain.repository.BooksRepository
+import dominando.android.data_room.filehelper.LocalFileHelper
+import dominando.android.data_room.RoomLocalDataImpl
 import dominando.android.data_room.database.AppDatabase
 import dominando.android.domain.interactor.ListBooksUseCase
 import dominando.android.domain.interactor.RemoveBookUseCase
@@ -17,7 +17,7 @@ import org.koin.dsl.module
 val presentationModule = module {
 
     single {
-        RoomRepository(AppDatabase.getDatabase(context = get()), LocalFileHelper()) as BooksRepository
+        RoomLocalDataImpl(AppDatabase.getDatabase(context = get()), LocalFileHelper()) as BooksRepository
         // FbRepository() as BooksRepository
     }
 
