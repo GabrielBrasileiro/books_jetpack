@@ -6,7 +6,7 @@ import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.io.IOException
 
-object FileUtil {
+internal object FileUtil {
 
     fun pathFromBook(book: BookData): String {
         return "/data/data/dominando.android.livros/files/${book.id}.jpg"

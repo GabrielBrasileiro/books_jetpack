@@ -4,7 +4,8 @@ import dominando.android.data.model.BookData
 import dominando.android.data_room.entity.Book as BookEntity
 import java.util.UUID
 
-object BookConverter {
+internal object BookConverter {
+
     fun fromData(binding: BookData) = BookEntity(
             if (binding.id.isBlank()) UUID.randomUUID().toString() else binding.id,
             binding.title,

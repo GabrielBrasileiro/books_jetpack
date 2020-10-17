@@ -4,7 +4,7 @@ import android.util.Log
 import dominando.android.data.model.BookData
 import java.io.File
 
-class LocalFileHelper : FileHelper {
+internal class LocalFileHelper : FileHelper {
 
     override fun saveCover(book: BookData): Boolean {
         Log.d("NGVL", "saveCover: ${book.coverUrl}")

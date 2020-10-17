@@ -10,7 +10,7 @@ import dominando.android.data_room.converters.MediaTypeConverter
 
 @Entity
 @TypeConverters(MediaTypeConverter::class)
-data class Book(
+internal data class Book(
         @PrimaryKey
     var id: String,
         var title: String = "",
