@@ -1,8 +1,8 @@
 package dominando.android.domain
 
-import dominando.android.data.BooksRepository
 import dominando.android.domain.data.DataFactory
 import dominando.android.domain.interactor.RemoveBookUseCase
+import dominando.android.domain.repository.BooksRepository
 import io.mockk.coEvery
 import io.mockk.mockk
 import kotlinx.coroutines.runBlocking
