@@ -63,7 +63,7 @@ To run this application, you must have to [create a Firebase Project](https://fi
 Afterwards, you must have to download the `google_services.json` file from the firebase console and add it `app` module root folder.
 If you want to save data on Firebase Cloud Firestore, [enable this database](https://firebase.google.com/docs/firestore/quickstart) for your project in Firebase Console. Also [enable the Firebase Cloud Storage](https://firebase.google.com/docs/storage/android/start).
 
-To choose the data source you will save application data, just make the following change in the [DataModules.kt](./data/src/main/java/dominando/android/data/repository/BooksRepositoryImpl.kt) file.
+To choose the data source you will save application data, just make the following change in the [BooksRepositoryImpl.kt](./data/src/main/java/dominando/android/data/repository/BooksRepositoryImpl.kt) file.
 
 ```kotlin
 internal class BooksRepositoryImpl(
