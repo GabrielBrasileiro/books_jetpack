@@ -13,7 +13,6 @@ object DataRoomModules {
         loadKoinModules(module {
             single<RoomLocalData> {
                 RoomLocalDataImpl(AppDatabase.getDatabase(context = get()), LocalFileHelper())
-                // FbRepository() as BooksRepository
             }
         })
     }
